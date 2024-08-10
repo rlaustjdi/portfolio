@@ -34,19 +34,21 @@
   </head>
   <body>
     <!--Header-->
-    <header>
-      <div>
-        <img src="images/favicon.ico" alt="logo" />
-        <h1><a href="#">김연서</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">김연서</a></h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">My work</a></li>
-          <li><a href="#testimonial">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonials</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -54,115 +56,120 @@
     <main>
       <!--Home-->
       <section id="home">
-        <img src="images/profile.png" alt="profile" />
-        <h2>Hello, I&#39;m YeonSeo Kim</h2>
-        <p>
+        <img class="home__avatar" src="images/profile.png" alt="profile" />
+        <h2 class="home__title">
+          Hello, <br />
+          I&#39;m <strong class="home__title--strong"> YeonSeo</strong> Kim
+        </h2>
+        <p class="home__description">
           안녕하세요! 협업을 통해 끊임없이 배우고 성장하는 프론트엔드 개발자
           김연서입니다.
         </p>
-        <a href="#contact">Contact Me</a>
+        <a class="home__contact" href="#contact">Contact Me</a>
       </section>
       <!--About-->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
+      <section id="about" class="section max-container">
+        <h2 class="title">About Me</h2>
+        <p class="description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
           cumque officia maiores nihil deserunt nam commodi iure veritatis hic
           suscipit voluptatibus nesciunt eaque non eos iusto, voluptates quasi
-          cupiditate quibusdam?
+          cupiditate quibusdam
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>FrontEnd</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">FrontEnd</p>
             <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>
           </li>
-          <li>
-            <i class="fa-brands fa-figma"></i>
-            <p>Design</p>
+          <li class="major">
+            <i class="fa-brands fa-figma major__icon"></i>
+            <p class="major__title">Design</p>
             <p>Figma</p>
           </li>
-          <li>
-            <i class="fa-solid fa-user-group"></i>
-            <p>Cooperation</p>
+          <li class="major">
+            <i class="fa-solid fa-user-group major__icon"></i>
+            <p class="major__title">Cooperation</p>
             <p>Github, Notion, Discord</p>
           </li>
         </ul>
-        <ul>
-          <li>
-            <img src="images/hsu.png" alt="hansung-logo" />
+        <ul class="jobs">
+          <li class="job">
+            <img class="job__img" src="images/hsu.png" alt="hansung-logo" />
             <div>
-              <p>한성대학교 졸업</p>
-              <p>2018.03 - 2024.02</p>
+              <p class="job__name">한성대학교 졸업</p>
+              <p class="job__period">2018.03 - 2024.02</p>
             </div>
           </li>
-          <li>
-            <img src="images/elice.png" alt="hansung-logo" />
+          <li class="job">
+            <img class="job__img" src="images/elice.png" alt="hansung-logo" />
             <div>
-              <p>엘리스 프론트엔드&백엔드 웹 개발자 트랙 수료</p>
-              <p>2023.12 - 2024.04</p>
+              <p class="job__name">
+                엘리스 프론트엔드&백엔드 웹 개발자 트랙 수료
+              </p>
+              <p class="job__period">2023.12 - 2024.04</p>
             </div>
           </li>
         </ul>
       </section>
       <!--Skills-->
-      <section id="skills">
-        <h2>My Skills</h2>
-        <p>Skills & Attributes</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-          reiciendis velit nostrum. Saepe nostrum rerum delectus inventore
-          excepturi obcaecati, error, beatae ullam sed ratione optio in illo
-          animi, odit expedita.
-        </p>
-        <div>
-          <section>
-            <h3>Coding SKills</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>TypeScript</span><span>40%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>React</span><span>60%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>NodeJs</span><span>40%</span></div>
-                <div><div style="width: 40%"></div></div>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Etc</h3>
-            <ul>
-              <li>Git</li>
-            </ul>
-          </section>
-        </div>
-      </section>
+      <section id="skills" class="section">
+        <div class="max-container"><h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            reiciendis velit nostrum. Saepe nostrum rerum delectus inventore
+            excepturi obcaecati, error, beatae ullam sed ratione optio in illo
+            animi, odit expedita.
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding SKills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata"><span>HTML</span><span>90%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata"><span>TypeScript</span><span>40%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 40%"></div></div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata"><span>React</span><span>60%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 60%"></div></div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata"><span>NodeJs</span><span>40%</span></div>
+                  <div class="bar__bg"><div class="bar__value" style="width: 40%"></div></div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+              </ul>
+            </section>
+          </div>
+        </section></div>
       <!--Work-->
-      <section id="work">
-        <h2>My work</h2>
-        <p>Projects</p>
+      <section id="work" class="section">
+        <h2 class="title">My work</h2>
+        <p class="description">Projects</p>
         <ul>
           <li>
             <button>All <span>8</span></button>
@@ -199,9 +206,9 @@
         </ul>
       </section>
       <!--Testimonials-->
-      <section id="Testimonial">
-        <h2>Testimonial</h2>
-        <p>See what they say about me</p>
+      <section id="testimonial" class="section">
+        <h2 class="title">Testimonial</h2>
+        <p class="description">See what they say about me</p>
         <ul>
           <li>
             <img src="" alt="people1" />
@@ -237,9 +244,9 @@
       </aside>
     </main>
     <!--Footer-->
-    <footer id="contact">
-      <h2>Let&#39;s talk</h2>
-      <p>yeonseo341@gmail.com</p>
+    <footer id="contact" class="section">
+      <h2 class="title">Let&#39;s talk</h2>
+      <p class="description">yeonseo341@gmail.com</p>
       <ul>
         <li>
           <a
